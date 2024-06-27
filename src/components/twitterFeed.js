@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import 'react-tweet';
+import { Tweet } from 'react-tweet';
 
-export default function twitterFeed() {
+export default function TwitterFeed() {
   return (
-    <div>
-      <a class="twitter-timeline" href="https://twitter.com/NorwayFooty?ref_src=twsrc%5Etfw">
-      Tweets by NorwayFooty</a> 
-      
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div id = "twitterFeed">
+      <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="NorwayFooty"
+        options={{ tweetLimit: 5, height: 400}}
+      />
     </div>
-  )
+  );
 }

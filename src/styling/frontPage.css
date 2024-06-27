@@ -7,3 +7,8 @@ body{
     background-color: black;
     background-image: url("../pictures/background.webp");
 }
+
+#twitterFeed{
+    width: 400px;
+    
+}
