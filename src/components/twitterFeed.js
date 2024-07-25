@@ -1,7 +1,7 @@
 import React from 'react';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import 'react-tweet';
-import { Tweet } from 'react-tweet';
+import { Tweet, TweetActions } from 'react-tweet';
 
 export default function TwitterFeed() {
   return (
@@ -9,8 +9,10 @@ export default function TwitterFeed() {
       <TwitterTimelineEmbed
         sourceType="profile"
         screenName="NorwayFooty"
-        options={{ tweetLimit: 5, height: 400}}
+        options={{ dataTweetLimit: 5}}
+      
       />
+      <Tweet tweetId="1720803669178716161" />
     </div>
   );
 }

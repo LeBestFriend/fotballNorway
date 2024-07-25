@@ -3,10 +3,11 @@ import RenderComponent from "./components/table/RenderComponent";
 import Layout from "./components/Layout";
 import FrontPageContent from "./FrontPageContent";
 import TwitterFeed from "./components/TwitterFeed";
+import ScraperComponent from "./components/fetching/ScraperComponent";
 function TestApp() {
 
   return (
-    <TwitterFeed/>
+    ScraperComponent()
   )
 }
 export default TestApp;
